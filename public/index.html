@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Creator</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Create ERC-20 or ERC-721 Tokens</h1>
+
+    <h2>Create ERC-20 Token</h2>
+    <form id="erc20-form">
+        <input type="text" id="erc20-name" placeholder="Token Name" required />
+        <input type="text" id="erc20-symbol" placeholder="Token Symbol" required />
+        <input type="number" id="erc20-supply" placeholder="Initial Supply" required />
+        <button type="submit">Create ERC-20 Token</button>
+    </form>
+
+    <h2>Create ERC-721 Token</h2>
+    <form id="erc721-form">
+        <input type="text" id="erc721-uri" placeholder="Token URI" required />
+        <button type="submit">Create ERC-721 Token</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.2.11/dist/web3.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>
